@@ -8,11 +8,12 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
 * {
      //background-color: aqua;
-     font-family: 'hp' !important;
-     width: 100%;
+     font-family: 'Source Sans Pro' !important;
+     //width: 100%;
      box-sizing: border-box;
      -webkit-box-sizing:border-box;
      -moz-box-sizing: border-box;

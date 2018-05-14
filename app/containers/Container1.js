@@ -9,14 +9,16 @@ const styles = {
     dummy: {
         backgroundColor: '#000',
         // height: '30rem',
-        fontSize: 30,
+        // fontSize: '5vw',
+        paddingTop: '10vw',
+        paddingBottom: '10vw',
         display: 'flex'
     },
     container: {
         backgroundImage: `url(${Background})`
     },
     wrapper: {
-        marginTop: '4rem',
+        marginTop: '10vw',
         display: 'flex',
         // height: '20rem',
         alignItems: 'baseline',
@@ -29,26 +31,26 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        height: '26rem',
+        // height: '26rem',
         alignItems: 'center',
         justifyContent: 'center',
     },
     img: {
-        width: '34rem'
+        width: '45vw'
     },
     lightTitle: {
         color: '#fff',
-        fontSize: '1.5rem',
+        fontSize: '1vw',
         fontWeight: 'lighter'
     },
     subtitle: {
         color: '#fff',
-        fontSize: '2rem',
+        fontSize: '4vw',
         fontWeight: 'bold'
     },
     body: {
         color: '#fff',
-        fontSize: '1rem',
+        fontSize: '1.5vw',
         fontWeight: 'bold',
         lineHeight: '1',
         marginTop: '1rem'
@@ -64,7 +66,7 @@ class Container1 extends Component {
         return (
             <div className="dummy" style={styles.dummy}>
                 <Grid container style={styles.container} spacing={0}>
-                    <Grid style={styles.wrapper} md={6}>
+                    <Grid style={styles.wrapper} xs={6} sm={6} md={6} lg={6} xl={6}>
                         <div style={styles.box}>
                             <div>
                                 <RedTitle text={this.props.data.familia}/>
@@ -84,7 +86,7 @@ class Container1 extends Component {
                             </Grid>
                         </div>
                     </Grid>
-                    <Grid style={styles.rightBox} item md={6}>
+                    <Grid style={styles.rightBox} item xs={6} sm={6} md={6} lg={6} xl={6}>
                         <img style={styles.img} src={image}/>
                     </Grid>
                 </Grid>

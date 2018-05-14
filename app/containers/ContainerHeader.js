@@ -15,7 +15,7 @@ const styles = {
         backgroundColor: 'blue'
     },
     img: {
-        width: '15rem'
+        width: '25vw'
     },
     wrapper: {
         display: 'flex',
@@ -26,6 +26,9 @@ const styles = {
     },
     text: {
         width: '70%',
+        // fontSize: '50%',
+        // fontSize: '30px',
+        fontSize: '2.5vw',
         textAlign: 'right'
     },
     line: {
@@ -45,11 +48,11 @@ class ContainerHeader extends Component {
         return (
             <div className="dummy" style={styles.dummy}>
                 <Grid container spacing={0}>
-                    <Grid style={styles.wrapper} item sm={12} md={4}>
+                    <Grid style={styles.wrapper} item xs={6} sm={6} md={4} lg={4} xl={4}>
                         <img style={styles.img} src={image}/>
                     </Grid>
-                    <Grid item sm={1} md={4}/>
-                    <Grid style={styles.wrapper} item sm={12} md={4}>
+                    <Grid item xs={false} sm={false} md={4} lg={4} xl={4}/>
+                    <Grid style={styles.wrapper} item xs={6} sm={6} md={4} lg={4} xl={4}>
                         <div style={styles.text}>OMEN Laptop 17</div>
                         <hr style={styles.line} width="10"/>
                     </Grid>
