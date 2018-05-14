@@ -2,7 +2,6 @@ import React, {Component, PropTypes} from 'react';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
 import Modal from '../components/Modal';
-import {css} from '../styles/modal.scss';
 
 const styles = {
     dummy: {

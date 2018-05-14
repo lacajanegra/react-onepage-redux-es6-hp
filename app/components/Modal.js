@@ -39,7 +39,7 @@ class Modal extends React.Component {
                              X
                         </Button>
                         <ReactPlayer
-                            url={this.props.video} width={'100%'} playing/>
+                            url={this.props.video || 'https://vimeo.com/243556536'} width={'100%'} playing/>
                     </div>
                 </div>
             </div>
