@@ -23,12 +23,14 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        height: '26rem',
+        // height: '26rem',
+        marginTop: '10vw',
+        marginBottom: '10vw',
         alignItems: 'center',
         justifyContent: 'center',
     },
     img: {
-        width: '25rem'
+        width: '35vw'
     },
     lightTitle: {
         color: '#fff',
@@ -56,7 +58,7 @@ class Features extends Component {
     render() {
         return (
             <Grid container spacing={0}>
-                <Grid style={styles.wrapper} item md={6}>
+                <Grid style={styles.wrapper} item xs={6} sm={6} md={6} lg={6} xl={6}>
                     <div>
                         {this.props.i % 2 !== 0 ?
                             <img style={styles.img} src={this.props.data.foto}/> :
@@ -65,7 +67,7 @@ class Features extends Component {
 
                     </div>
                 </Grid>
-                <Grid style={styles.rightBox} item md={6}>
+                <Grid style={styles.rightBox} item xs={6} sm={6} md={6} lg={6} xl={6}>
                     {this.props.i % 2 !== 0 ?
                         <GridElement item={this.props.data} color={'#000'}/> :
                         <img style={styles.img} src={this.props.data.foto}/>

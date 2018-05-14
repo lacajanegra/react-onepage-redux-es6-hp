@@ -1,23 +1,23 @@
 import React, {Component, PropTypes} from 'react';
 const styles = {
     img: {
-        width: '6rem'
+        width: '6vw'
     },
     itemWrap: {
         // width: '1rem'
-        paddingLeft: '3rem',
-        paddingRight: '3rem',
+        paddingLeft: '3vw',
+        paddingRight: '3vw',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
     },
     item: {
-        margin: '0.5rem',
+        margin: '0.5vw',
         // width: '1rem',
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: '1rem',
+        fontSize: '2vw',
         fontWeight: 'bold',
         color: '#c3152b'
     },
@@ -38,8 +38,9 @@ class GridElement extends Component {
                 </div>
                 <div style={styles.itemWrap}>
                     <div style={{textAlign: 'center',
-                        fontSize: '1rem',
+                        fontSize: '1.5vw',
                         fontWeight: 'lighter',
+                        maxWidth: '30vw',
                         color: this.props.color}}>{this.props.item.descripcion}</div>
                 </div>
             </div>

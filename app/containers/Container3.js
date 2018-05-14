@@ -9,28 +9,28 @@ const styles = {
         // height: '30rem',
         fontSize: 30,
         display: 'flex',
-        marginBottom: '4rem'
+        // marginBottom: '4rem'
     },
     box: {
         backgroundColor: '#fff',
-        height: '26rem',
+        // height: '26rem',
         alignItems: 'center'
     },
     imageWrapper: {
         width: '100%',
         height: 100,
         position: 'relative',
-        top: '-30px'
+        top: '-20vw'
     },
     image: {
-        // width: '35rem'
+        width: '50vw'
     },
     rightBox: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         // backgroundColor: 'purple',
-        height: '26rem',
+        // height: '26rem',
         // justifyContent: 'center'
     },
     especificationsTitle: {
@@ -42,8 +42,9 @@ const styles = {
         top: '-20px'
     },
     especifications: {
-        width: '100%',
+        // width: '100%',
         position: 'relative',
+        top: '-20px'
     }
 };
 
@@ -55,15 +56,14 @@ class Container3 extends Component {
         return (
             <div className="dummy" style={styles.dummy}>
                 <Grid container  alignItems={'center'}  spacing={0}>
-                    <Grid style={styles.box} item md={6}>
+                    <Grid style={styles.box} item xs={false} sm={false} item xs={6} sm={6} md={6} lg={6} xl={6}>
                         <div style={styles.imageWrapper} >
                             <img style={styles.image} src={image}/>
                         </div>
                     </Grid>
-                    <Grid style={styles.rightBox} item md={6}>
+                    <Grid style={styles.rightBox} item xs={6} sm={6} md={6} lg={6} xl={6}>
                         <div style={styles.especificationsTitle}>
                             <RedTitle text={'Especificaciones principales'}/>
-
                         </div>
                         <div style={styles.especifications}>
                             {this.props.data &&

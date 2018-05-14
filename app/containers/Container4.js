@@ -23,7 +23,7 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        height: '26rem',
+        // height: '26rem',
         alignItems: 'center',
         justifyContent: 'center',
     },

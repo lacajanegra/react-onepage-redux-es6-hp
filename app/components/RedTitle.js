@@ -4,7 +4,7 @@ const styles = {
     title: {
         color: '#c3152b',
         fontWeight: 'bold',
-        fontSize: '1.5rem'
+        fontSize: '3vw'
     }
 };
 

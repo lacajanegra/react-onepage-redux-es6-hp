@@ -3,7 +3,7 @@ import Grid from 'material-ui/Grid';
 import GridElement from '../components/GridElement';
 const styles = {
     box: {
-        height: '10rem',
+        // height: '10rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -25,7 +25,7 @@ class Container2 extends Component {
             <div className="dummy" style={styles.dummy}>
                 <Grid container justify={'center'} alignItems={'center'}  spacing={0}>
                     {this.props.data && this.props.data.map((item, i) => {
-                        return  <Grid key={i} style={styles.box} item md={4}><GridElement key={i} item={item} color={'white'}/></Grid>;
+                        return  <Grid key={i} style={styles.box} item xs={6} sm={6} md={4} lg={4} xl={4}><GridElement key={i} item={item} color={'white'}/></Grid>;
                     })}
 
                 </Grid>

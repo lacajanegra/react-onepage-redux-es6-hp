@@ -10,15 +10,16 @@ const styles = {
         backgroundColor: '#000',
         // height: '30rem',
         // fontSize: '5vw',
-        paddingTop: '10vw',
-        paddingBottom: '10vw',
         display: 'flex'
     },
     container: {
-        backgroundImage: `url(${Background})`
+        paddingTop: '10vw',
+        paddingBottom: '10vw',
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat: 'no-repeat'
     },
     wrapper: {
-        marginTop: '10vw',
+        paddingLeft: '2vw',
         display: 'flex',
         // height: '20rem',
         alignItems: 'baseline',
@@ -40,7 +41,7 @@ const styles = {
     },
     lightTitle: {
         color: '#fff',
-        fontSize: '1vw',
+        fontSize: '2.5vw',
         fontWeight: 'lighter'
     },
     subtitle: {
@@ -51,7 +52,7 @@ const styles = {
     body: {
         color: '#fff',
         fontSize: '1.5vw',
-        fontWeight: 'bold',
+        fontWeight: 'lighter',
         lineHeight: '1',
         marginTop: '1rem'
     }
@@ -66,7 +67,7 @@ class Container1 extends Component {
         return (
             <div className="dummy" style={styles.dummy}>
                 <Grid container style={styles.container} spacing={0}>
-                    <Grid style={styles.wrapper} xs={6} sm={6} md={6} lg={6} xl={6}>
+                    <Grid item style={styles.wrapper} xs={6} sm={6} md={6} lg={6} xl={6}>
                         <div style={styles.box}>
                             <div>
                                 <RedTitle text={this.props.data.familia}/>
@@ -74,12 +75,12 @@ class Container1 extends Component {
                                     {this.props.data.modelo}
                                 </span>
                             </div>
-                            <Grid md={12}>
+                            <Grid item md={12}>
                                 <span style={styles.subtitle}>
                                 {this.props.data.subtitulo}
                                 </span>
                             </Grid>
-                            <Grid md={12}>
+                            <Grid item  md={12}>
                                 <div style={styles.body}>
                                     {this.props.data.introducción}
                                 </div>

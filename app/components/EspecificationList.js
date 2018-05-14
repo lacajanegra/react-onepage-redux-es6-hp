@@ -4,15 +4,15 @@ const styles = {
     title: {
         color: '#c3152b',
         fontWeight: 'bold',
-        fontSize: '1.5rem'
+        fontSize: '1.5vw'
     },
     key: {
         fontWeight: 'bold',
-        fontSize: '1rem'
+        fontSize: '1vw'
     },
     value: {
         fontWeight: 'lighter',
-        fontSize: '1rem'
+        fontSize: '1vw'
     }
 };
 

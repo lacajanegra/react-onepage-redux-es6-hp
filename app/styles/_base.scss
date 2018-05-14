@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'hp';
   src: url('../assets/fonts/hp.ttf');
@@ -11,12 +10,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 
 * {
-     //background-color: aqua;
-     font-family: 'Source Sans Pro' !important;
-     //width: 100%;
-     box-sizing: border-box;
-     -webkit-box-sizing:border-box;
-     -moz-box-sizing: border-box;
+  //background-color: aqua;
+  font-family: 'Source Sans Pro' !important;
+  //width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body,
@@ -28,59 +27,58 @@ html {
 }
 
 ul li {
-     color: #3c3c3c;
-     /* set color of list item text */
-
-     list-style: none;
+  color: #3c3c3c;
+  /* set color of list item text */
+  height: 3vw;
+  list-style: none;
 }
 
 ul li::before {
-     color: #c3152b;
-     /* color of bullet or square */
+  color: #c3152b;
+  /* color of bullet or square */
 
-     content: "\2022";
-     /* Unicode of character to precede the list item */
+  content: "\2022";
+  /* Unicode of character to precede the list item */
 
-     font-size: 0.7em;
-     /* em or %*/
+  font-size: 0.7em;
+  /* em or %*/
 
-     padding-right: 0.5em;
-     /* use em*/
+  padding-right: 0.5em;
+  /* use em*/
 
-     position: relative;
-     top: 0em;
-     /* use em or % */
+  position: relative;
+  top: 0em;
+  /* use em or % */
 
 }
 
-
 .tiles {
-     //padding: 8vh 16vw;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row;
-     justify-content: center;
-     position: relative;
+  //padding: 8vh 16vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
 }
 
 .tile {
-     //margin: 15px;
-     cursor: pointer;
-     width: 18rem;
-     height: 18rem;
-     //transition: 300ms ease-in-out;
-     &.open {
-          width: 62vw;
-          height: 62vw;
-          position: absolute;
-          top: 20%;
-          left: 50%;
-          margin: 0;
-          margin-top: -31vw;
-          margin-left: -31vw;
-          //box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
-     }
-     img {
-          width: 100%;
-     }
+  //margin: 15px;
+  cursor: pointer;
+  width: 18rem;
+  height: 18rem;
+  //transition: 300ms ease-in-out;
+  &.open {
+    width: 62vw;
+    height: 62vw;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: 0;
+    margin-top: -31vw;
+    margin-left: -31vw;
+    //box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+  }
+  img {
+    width: 100%;
+  }
 }
