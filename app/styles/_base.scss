@@ -1,0 +1,85 @@
+
+@font-face {
+  font-family: 'hp';
+  src: url('../assets/fonts/hp.ttf');
+  src: url('../assets/fonts/hp.ttf?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/hp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+     background-color: aqua;
+     font-family: 'hp' !important;
+     width: 100%;
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'hp' !important;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+ul li {
+     color: #3c3c3c;
+     /* set color of list item text */
+
+     list-style: none;
+}
+
+ul li::before {
+     color: #c3152b;
+     /* color of bullet or square */
+
+     content: "\2022";
+     /* Unicode of character to precede the list item */
+
+     font-size: 0.7em;
+     /* em or %*/
+
+     padding-right: 0.5em;
+     /* use em*/
+
+     position: relative;
+     top: 0em;
+     /* use em or % */
+
+}
+
+
+.tiles {
+     //padding: 8vh 16vw;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: center;
+     position: relative;
+}
+
+.tile {
+     //margin: 15px;
+     cursor: pointer;
+     width: 18rem;
+     height: 18rem;
+     //transition: 300ms ease-in-out;
+     &.open {
+          width: 62vw;
+          height: 62vw;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          margin: 0;
+          margin-top: -31vw;
+          margin-left: -31vw;
+          //box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
+     }
+     img {
+          width: 100%;
+     }
+}
