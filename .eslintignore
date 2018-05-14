@@ -1,0 +1,7 @@
+dist
+node_modules
+coverage
+webpack.*.js
+*server.js
+!app/components/Gallery.js
+*app/containers/Container5.js
