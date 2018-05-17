@@ -15,9 +15,6 @@ class Gallery extends Component {
         this.gotoNext = this.gotoNext.bind(this);
         this.gotoPrevious = this.gotoPrevious.bind(this);
     }
-    componentDidMount() {
-        console.log('en did', this.props);
-    }
     openLightbox(event, obj) {
         this.setState({
             currentImage: obj.index,

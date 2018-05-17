@@ -3,7 +3,6 @@ import Grid from 'material-ui/Grid';
 import GridElement from '../components/GridElement';
 const styles = {
     box: {
-        // height: '10rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

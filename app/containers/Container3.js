@@ -6,14 +6,11 @@ import EspecificationList from '../components/EspecificationList';
 
 const styles = {
     dummy: {
-        // height: '30rem',
         fontSize: 30,
         display: 'flex',
-        // marginBottom: '4rem'
     },
     box: {
         backgroundColor: '#fff',
-        // height: '26rem',
         alignItems: 'center'
     },
     imageWrapper: {
@@ -29,9 +26,6 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        // backgroundColor: 'purple',
-        // height: '26rem',
-        // justifyContent: 'center'
     },
     especificationsTitle: {
         backgroundColor: '#fff',
@@ -42,7 +36,6 @@ const styles = {
         top: '-20px'
     },
     especifications: {
-        // width: '100%',
         position: 'relative',
         top: '-20px'
     }

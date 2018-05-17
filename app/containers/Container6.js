@@ -5,7 +5,6 @@ import Gallery from '../components/Gallery';
 const styles = {
     dummy: {
         backgroundColor: '#c3152b',
-        // height: '30rem',
         fontSize: 30,
         display: 'flex',
         flexDirection: 'column',
@@ -13,7 +12,6 @@ const styles = {
     wrapper: {
         marginTop: '4rem',
         display: 'flex',
-        // height: '20rem',
         alignItems: 'baseline',
         justifyContent: 'center'
     },

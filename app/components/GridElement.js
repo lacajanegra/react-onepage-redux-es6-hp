@@ -4,7 +4,6 @@ const styles = {
         width: '6vw'
     },
     itemWrap: {
-        // width: '1rem'
         paddingLeft: '3vw',
         paddingRight: '3vw',
         display: 'flex',
@@ -13,7 +12,6 @@ const styles = {
     },
     item: {
         margin: '0.5vw',
-        // width: '1rem',
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',

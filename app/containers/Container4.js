@@ -4,7 +4,6 @@ import Features from '../components/Features';
 const styles = {
     dummy: {
         backgroundColor: '#fff',
-        // height: '30rem',
         fontSize: 30,
         display: 'flex',
         flexDirection: 'column',
@@ -12,7 +11,6 @@ const styles = {
     wrapper: {
         marginTop: '4rem',
         display: 'flex',
-        // height: '20rem',
         alignItems: 'baseline',
         justifyContent: 'center'
     },
@@ -23,7 +21,6 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        // height: '26rem',
         alignItems: 'center',
         justifyContent: 'center',
     },

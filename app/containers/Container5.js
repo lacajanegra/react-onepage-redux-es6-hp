@@ -6,7 +6,6 @@ import Modal from '../components/Modal';
 const styles = {
     dummy: {
         backgroundColor: '#fff',
-        // height: '30rem',
         fontSize: 12,
         display: 'flex'
     },
@@ -14,14 +13,12 @@ const styles = {
         paddingTop: '3rem',
         paddingBottom: '5rem',
         display: 'flex',
-        // height: '20rem',
         alignItems: 'baseline',
         justifyContent: 'center',
         margin: '0 auto'
     },
     box: {
         textAlign: 'center',
-        // maxWidth: '70%',
         display: 'flex',
         flexDirection: 'column',
         color: '#fff',

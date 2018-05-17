@@ -8,8 +8,6 @@ import RedTitle from '../components/RedTitle';
 const styles = {
     dummy: {
         backgroundColor: '#000',
-        // height: '30rem',
-        // fontSize: '5vw',
         display: 'flex'
     },
     container: {
@@ -21,7 +19,6 @@ const styles = {
     wrapper: {
         paddingLeft: '2vw',
         display: 'flex',
-        // height: '20rem',
         alignItems: 'baseline',
         justifyContent: 'center'
     },
@@ -32,7 +29,6 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        // height: '26rem',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -41,12 +37,12 @@ const styles = {
     },
     lightTitle: {
         color: '#fff',
-        fontSize: '2.5vw',
+        fontSize: '2.2vw',
         fontWeight: 'lighter'
     },
     subtitle: {
         color: '#fff',
-        fontSize: '4vw',
+        fontSize: '3vw',
         fontWeight: 'bold'
     },
     body: {

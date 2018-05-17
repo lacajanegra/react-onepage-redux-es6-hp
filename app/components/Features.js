@@ -6,13 +6,11 @@ import GridElement from './GridElement';
 const styles = {
     dummy: {
         backgroundColor: '#fff',
-        // height: '30rem',
         fontSize: 30,
         display: 'flex'
     },
     wrapper: {
         display: 'flex',
-        // height: '20rem',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -23,7 +21,6 @@ const styles = {
     },
     rightBox: {
         display: 'flex',
-        // height: '26rem',
         marginTop: '10vw',
         marginBottom: '10vw',
         alignItems: 'center',

@@ -5,7 +5,6 @@ import Grid from 'material-ui/Grid';
 
 const styles = {
     dummy: {
-        // fontFamily: font,
         backgroundColor: 'black',
         height: '8rem',
         fontSize: 30,
@@ -20,14 +19,11 @@ const styles = {
     wrapper: {
         display: 'flex',
         color: 'white',
-        // flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center'
     },
     text: {
         width: '70%',
-        // fontSize: '50%',
-        // fontSize: '30px',
         fontSize: '2.5vw',
         textAlign: 'right'
     },

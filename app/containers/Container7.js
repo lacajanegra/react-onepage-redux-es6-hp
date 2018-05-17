@@ -5,7 +5,6 @@ import Grid from 'material-ui/Grid';
 const styles = {
     dummy: {
         backgroundColor: '#2e2e2e',
-        // height: '30rem',
         fontSize: 12,
         display: 'flex'
     },
@@ -13,7 +12,6 @@ const styles = {
         marginTop: '2rem',
         marginBottom: '2rem',
         display: 'flex',
-        // height: '20rem',
         alignItems: 'baseline',
         justifyContent: 'center'
     },
