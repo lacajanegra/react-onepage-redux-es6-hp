@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 // import '../stylesheets/DumbComponent.scss'
 import image from '../assets/img/omen_logo.png';
 import Grid from 'material-ui/Grid';
@@ -40,6 +40,9 @@ const styles = {
 
 
 class ContainerHeader extends Component {
+    static propTypes = {
+        titulo: PropTypes.string
+    };
     render() {
         return (
             <div className="dummy" style={styles.dummy}>
@@ -49,7 +52,7 @@ class ContainerHeader extends Component {
                     </Grid>
                     <Grid item xs={false} sm={false} md={4} lg={4} xl={4}/>
                     <Grid style={styles.wrapper} item xs={6} sm={6} md={4} lg={4} xl={4}>
-                        <div style={styles.text}>OMEN Laptop 17</div>
+                        <div style={styles.text}>{this.props.titulo}</div>
                         <hr style={styles.line} width="10"/>
                     </Grid>
                 </Grid>

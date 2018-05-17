@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Grid from 'material-ui/Grid';
-import image from '../assets/img/left_notebook.png';
+// import image from '../assets/img/left_notebook.png';
 import RedTitle from '../components/RedTitle';
 import EspecificationList from '../components/EspecificationList';
 
@@ -43,7 +43,7 @@ const styles = {
 
 class Container3 extends Component {
     static propTypes = {
-        data: PropTypes.array
+        data: PropTypes.object
     };
     render() {
         return (
@@ -51,7 +51,7 @@ class Container3 extends Component {
                 <Grid container  alignItems={'center'}  spacing={0}>
                     <Grid style={styles.box} item xs={false} sm={false} item xs={6} sm={6} md={6} lg={6} xl={6}>
                         <div style={styles.imageWrapper} >
-                            <img style={styles.image} src={image}/>
+                            <img style={styles.image} src={this.props.data.imagenEspecificaciones}/>
                         </div>
                     </Grid>
                     <Grid style={styles.rightBox} item xs={6} sm={6} md={6} lg={6} xl={6}>
@@ -60,7 +60,7 @@ class Container3 extends Component {
                         </div>
                         <div style={styles.especifications}>
                             {this.props.data &&
-                            <EspecificationList especifications={this.props.data}/>
+                            <EspecificationList especifications={this.props.data.especificaciones}/>
                             }
                         </div>
                     </Grid>

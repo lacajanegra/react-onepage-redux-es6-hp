@@ -26,7 +26,9 @@ class Main extends Component {
     render() {
         return (
                 <div className={app}>
-                    <ContainerHeader/>
+                    {this.props.data.cabeceraDerecha &&
+                    <ContainerHeader titulo={this.props.data.cabeceraDerecha}/>
+                    }
                     {this.props.data.familia &&
                     <Container1 data={this.props.data}/>
                     }
@@ -34,7 +36,7 @@ class Main extends Component {
                     <Container2 data={this.props.data.diferenciadores}/>
                     }
                     {this.props.data.especificaciones &&
-                    <Container3 data={this.props.data.especificaciones}/>
+                    <Container3 data={this.props.data}/>
                     }
                     {this.props.data.visualesFicha &&
                     <Container4 data={this.props.data.visualesFicha}/>

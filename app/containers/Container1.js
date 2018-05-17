@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 // import '../stylesheets/DumbComponent.scss'
-import image from '../assets/img/omen_notebook.png';
+// import image from '../assets/img/omen_notebook.png';
 import Background from '../assets/img/background_c1.jpg';
 import Grid from 'material-ui/Grid';
 import RedTitle from '../components/RedTitle';
@@ -84,7 +84,7 @@ class Container1 extends Component {
                         </div>
                     </Grid>
                     <Grid style={styles.rightBox} item xs={6} sm={6} md={6} lg={6} xl={6}>
-                        <img style={styles.img} src={image}/>
+                        <img style={styles.img} src={this.props.data.imagenFicha}/>
                     </Grid>
                 </Grid>
             </div>
