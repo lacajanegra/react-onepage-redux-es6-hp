@@ -17,7 +17,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/dist/'),
         filename: '[name]-[hash].min.js',
-        publicPath: '/'
+        publicPath: './'
     },
     plugins: [
         // webpack gives your modules and chunks ids to identify them. Webpack can vary the
@@ -84,7 +84,15 @@ module.exports = {
             // we extract the styles into their own .css file instead of having
             // them inside the js.
             loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!sass')
-        }, {
+        },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf)$/,
+                loader: 'url-loader?limit=10000',
+                options: {
+                    name: "assets/fonts/[name].[ext]",
+                }
+
+            },{
             test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/,
             loader: 'url?limit=10000&mimetype=application/font-woff'
         }, {
