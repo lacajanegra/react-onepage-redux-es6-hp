@@ -16,11 +16,11 @@ class Main extends Component {
     static propTypes = {
         fetchData: PropTypes.func.isRequired,
         data: PropTypes.object,
-        match: PropTypes.any
+        location: PropTypes.any
     };
 
     componentWillMount() {
-        this.props.fetchData(this.props.match.params.id);
+        this.props.fetchData(this.props.location.search.split('=')[1] || '');
     }
 
     render() {

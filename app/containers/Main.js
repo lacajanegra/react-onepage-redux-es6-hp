@@ -11,7 +11,7 @@ class Main extends Component {
     render() {
         return (
             <Router>
-                    <Route path="/:id" component={ContainersWrapper}/>
+                    <Route path="/" component={ContainersWrapper}/>
             </Router>
         );
     }
